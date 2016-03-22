@@ -23,5 +23,11 @@ int main(int argc, const char * argv[]) {
     
     NSLog(@"%@ is %d and weighs %f", firstName, currentAge, currentWeight);
     
+    int x = 0;
+    
+    NSString *posOrNeg = x > 0 ? @"positive" : @"negative";
+    
+    NSLog(@"posOrNeg---->%@", posOrNeg);
+    
     return 0;
 }
