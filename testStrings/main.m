@@ -13,5 +13,11 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
     }
+    
+    NSString *firstName;
+    firstName = @"Jaime";
+    
+    NSLog(@"firstName: %@", firstName);
+    
     return 0;
 }
