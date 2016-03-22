@@ -29,5 +29,8 @@ int main(int argc, const char * argv[]) {
     
     NSLog(@"posOrNeg---->%@", posOrNeg);
     
+    int apples = 3 + 5 + 5 + 4 + 2;
+    
+    
     return 0;
 }
