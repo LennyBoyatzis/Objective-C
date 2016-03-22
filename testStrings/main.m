@@ -17,7 +17,11 @@ int main(int argc, const char * argv[]) {
     NSString *firstName;
     firstName = @"Jaime";
     
-    NSLog(@"firstName: %@", firstName);
+    int currentAge = 36;
+    
+    float currentWeight = 200.495;
+    
+    NSLog(@"%@ is %d and weighs %f", firstName, currentAge, currentWeight);
     
     return 0;
 }
