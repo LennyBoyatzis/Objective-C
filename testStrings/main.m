@@ -6,6 +6,14 @@
 //  Copyright © 2016 Leo Boyatzis. All rights reserved.
 //
 
+enum popcornSizes{
+    kidsPopcorn = 1,
+    smallPopcorn = 2,
+    mediumPopcorn = 3,
+    largePopcorn = 4,
+    tubPopcorn = 5
+};
+
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
@@ -32,6 +40,7 @@ int main(int argc, const char * argv[]) {
     int apples = 3 + 5 + 5 + 4 + 2;
     */
     
+    /*
     bool isMatinee = true;
 
     float regPrice = 10;
@@ -52,7 +61,36 @@ int main(int argc, const char * argv[]) {
     }
     
     NSLog(@"custPrice %f", custPrice);
+    */
     
+    float popcornPrice;
+    int popcornSize = kidsPopcorn;
+    
+    switch (popcornSize) {
+        case kidsPopcorn:
+            popcornPrice = 1.5;
+            break;
+        
+        case smallPopcorn:
+            popcornPrice = 3;
+            break;
+        
+        case mediumPopcorn:
+            popcornPrice = 4.25;
+            break;
+        
+        case largePopcorn:
+            popcornPrice = 5.25;
+            break;
+    
+        case tubPopcorn:
+            popcornPrice = 6;
+            break;
+        
+        default:
+            NSLog(@"No valid size entered");
+            break;
+    }
     
     return 0;
 }
