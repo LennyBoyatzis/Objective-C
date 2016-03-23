@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
     }
-    
+    /*
     NSString *firstName;
     firstName = @"Jaime";
     
@@ -30,6 +30,28 @@ int main(int argc, const char * argv[]) {
     NSLog(@"posOrNeg---->%@", posOrNeg);
     
     int apples = 3 + 5 + 5 + 4 + 2;
+    */
+    
+    bool isMatinee = true;
+
+    float regPrice = 10;
+    float seniorPrice = 5;
+    float matPrice = 4;
+    
+    int minAge = 60;
+    int custAge;
+    
+    float custPrice;
+    
+    if (isMatinee) {
+        custPrice = matPrice;
+    } else if (custAge >= minAge) {
+        custPrice = seniorPrice;
+    } else {
+        custPrice = regPrice;
+    }
+    
+    NSLog(@"custPrice %f", custPrice);
     
     
     return 0;
