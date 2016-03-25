@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ED69A0F945D52ACF7681E88E19937B3F24A84E1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88013B9BEE275BE1000781A2A42E6432C82F8AE1" : 0,
+    "ED69A0F945D52ACF7681E88E19937B3F24A84E1B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75EC5F20-24C9-4CE0-8CB6-403DC5CA8EA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88013B9BEE275BE1000781A2A42E6432C82F8AE1" : "testStrings\/testStrings\/",
+    "ED69A0F945D52ACF7681E88E19937B3F24A84E1B" : "testStrings\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "testStrings",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "testStrings.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LennyBoyatzis\/testStrings.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88013B9BEE275BE1000781A2A42E6432C82F8AE1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LennyBoyatzis\/Objective-C.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED69A0F945D52ACF7681E88E19937B3F24A84E1B"
+    }
+  ]
+}

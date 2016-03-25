@@ -22,6 +22,14 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
     }
     /*
+     Scope in objective-c
+     Block
+     Functional
+     File
+     Global
+    */
+    
+    /*
     NSString *firstName;
     firstName = @"Jaime";
     
