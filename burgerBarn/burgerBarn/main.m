@@ -40,6 +40,10 @@ int main(int argc, const char * argv[]) {
         // Set the value of the subtotal that we calculated above
         [outputDict setValue:@(subtotal) forKey:@"subtotal"];
         
+        //Assigning a variable to the value of a key in a dictionary
+        // NSString *name = [myObject valueForKey: @"name];
+        
     }
     return 0;
 }
+
