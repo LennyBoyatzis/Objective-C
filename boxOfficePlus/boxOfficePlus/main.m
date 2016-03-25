@@ -64,6 +64,10 @@ int main(int argc, const char * argv[]) {
             ageDiscount = YES;
         }
         
+        else {
+            ageDiscount = NO;
+        }
+        
         
         //Determine Price
         if (ageDiscount && isMatinee && !isEmployee) {
@@ -94,6 +98,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"age: %i customer price: %f current subtotal: %f \n", customerAge, customerPrice, subtotal);
     
     }
+    
+    grandTotal = subtotal + (subtotal * taxRate);
     
     printTicket();
     return 0;
