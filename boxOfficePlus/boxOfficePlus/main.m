@@ -49,39 +49,51 @@ int main(int argc, const char * argv[]) {
     float employeeRegularPrice = 4.0;
     float employeeMatineePrice = 0;
     
+    float subtotal = 0;
+    float taxRate = 0.05;
+    float grandTotal = 0;
     
-    //Assess Age Discount
-    if ((customerAge < youthAge) || (customerAge >= seniorAge)){
-        ageDiscount = YES;
+    NSArray *agesArray = @[@5, @5, @14, @42, @77];
+
+    for (NSNumber *age in agesArray) {
+        
+        customerAge = [age intValue];
+        
+        //Assess Age Discount
+        if ((customerAge < youthAge) || (customerAge >= seniorAge)){
+            ageDiscount = YES;
+        }
+        
+        
+        //Determine Price
+        if (ageDiscount && isMatinee && !isEmployee) {
+            customerPrice = ageAndMatineePrice;
+        }
+        
+        else if ((ageDiscount || isMatinee) && !isEmployee){
+            customerPrice = ageOrMatineePrice;
+        }
+        
+        else if (isEmployee && !isMatinee){
+            customerPrice = employeeRegularPrice;
+            NSString *employeeMessage = @"Thanks for being part of the team, enjoy your movie!";
+            NSLog(@"%@", employeeMessage);
+        }
+        
+        else if (isEmployee && isMatinee){
+            customerPrice = employeeMatineePrice;
+            employeeMessage = @"Thanks for being part of the team, enjoy your FREE movie!";
+            NSLog(@"%@", employeeMessage);
+        }
+        
+        else{
+            customerPrice = regularPrice;
+        }
+        
+        subtotal = subtotal + customerPrice;
+        NSLog(@"age: %i customer price: %f current subtotal: %f \n", customerAge, customerPrice, subtotal);
+    
     }
-    
-    
-    //Determine Price
-    if (ageDiscount && isMatinee && !isEmployee) {
-        customerPrice = ageAndMatineePrice;
-    }
-    
-    else if ((ageDiscount || isMatinee) && !isEmployee){
-        customerPrice = ageOrMatineePrice;
-    }
-    
-    else if (isEmployee && !isMatinee){
-        customerPrice = employeeRegularPrice;
-        NSString *employeeMessage = @"Thanks for being part of the team, enjoy your movie!";
-        NSLog(@"%@", employeeMessage);
-    }
-    
-    else if (isEmployee && isMatinee){
-        customerPrice = employeeMatineePrice;
-        employeeMessage = @"Thanks for being part of the team, enjoy your FREE movie!";
-        NSLog(@"%@", employeeMessage);
-    }
-    
-    else{
-        customerPrice = regularPrice;
-    }
-    
-    
     
     printTicket();
     return 0;
