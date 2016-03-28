@@ -17,6 +17,7 @@
 @property (nonatomic) float total;
 @property (nonatomic) bool isTakeOut;
 @property (nonatomic, strong) NSMutableArray *itemsOrdered;
+@property (nonatomic, readonly) NSString *checkID;
 
 // can set values like this [table1 setSubtotal: 12.75]
 // table1.subTotal = 12.75
