@@ -26,7 +26,7 @@
 
 // IBAction lets Interface builder know that this method is linked up to an object in interface build by an action
 - (IBAction)showFunFact {
-    NSLog(@"You pressed me!");
+    self.funFactLabel.text = @"Another interesting fact";
 }
 
 @end
