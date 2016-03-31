@@ -26,7 +26,11 @@
 
 // IBAction lets Interface builder know that this method is linked up to an object in interface build by an action
 - (IBAction)showFunFact {
-    self.funFactLabel.text = @"Another interesting fact";
+    
+    NSArray *facts = [[NSArray alloc] initWithObjects:@"Ants stretch when they wake up", @"Ostriches run faster than horses", nil];
+    
+    self.funFactLabel.text = [facts objectAtIndex:1];
+    
 }
 
 @end
